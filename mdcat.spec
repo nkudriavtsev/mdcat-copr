@@ -44,7 +44,7 @@ cargo test --no-default-features --features terminology
 %{_mandir}/man1/*
 
 %changelog
-* Tue 12 2021 Nicholas Kudriavtsev <nkudriavtsev@gmail.com> - 0.22.2-1
+* Tue Jan 12 2021 Nicholas Kudriavtsev <nkudriavtsev@gmail.com> - 0.22.2-1
 - Release 0.22.2
 - License change
 
