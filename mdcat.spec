@@ -25,7 +25,7 @@ images.
 
 %build
 # Build only relevant terminals for Linux
-cargo build --release --no-default-features --features terminology
+cargo build --release --no-default-features
 
 
 %install
