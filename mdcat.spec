@@ -1,8 +1,8 @@
 Name: mdcat
-Version: 0.10.1
+Version: 0.22.2
 Release: 1%{?dist}
 Summary: cat for CommonMark
-License: Apache License, Version 2.0
+License: Mozilla Public License 2.0
 URL: https://github.com/lunaryorn/mdcat/
 Source0: https://github.com/lunaryorn/mdcat/archive/mdcat-%{version}/mdcat-%{version}.tar.gz
 BuildRequires: cargo
@@ -42,5 +42,9 @@ cargo test --no-default-features --features terminology
 %{_bindir}/mdcat
 
 %changelog
+* Tue 12 2021 Nicholas Kudriavtsev <nkudriavtsev@gmail.com> - 0.22.2-1
+- Release 0.22.2
+- License change
+
 * Wed Oct 03 2018 Sebastian Wiesner <sebastian@swsnr.de> - 0.10.1-1
 - Initial spec file
