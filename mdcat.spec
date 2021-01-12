@@ -31,7 +31,7 @@ cargo build --release --no-default-features
 
 %install
 install -D -p -m 755 target/release/mdcat %{buildroot}%{_bindir}/mdcat
-install -D -p -m 644 target/release/mdcat.1 %{_mandir}/man1/mdcat.1
+install -D -p -m 644 mdcat.1 %{_mandir}/man1/mdcat.1
 
 
 %check
