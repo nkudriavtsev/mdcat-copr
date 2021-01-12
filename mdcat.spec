@@ -6,6 +6,7 @@ License: Mozilla Public License 2.0
 URL: https://github.com/lunaryorn/mdcat/
 Source0: https://github.com/lunaryorn/mdcat/archive/mdcat-%{version}/mdcat-%{version}.tar.gz
 BuildRequires: cargo
+BuildRequires: rubygem-asciidoctor
 %if 0%{?fedora} >= 24
 ExclusiveArch: x86_64 i686 armv7hl
 %else
