@@ -30,6 +30,7 @@ cargo build --release --no-default-features --features terminology
 
 %install
 install -D -p -m 755 target/release/mdcat %{buildroot}%{_bindir}/mdcat
+install -D -p -m 644 target/release/mdcat.1 %{_mandir}/man1/mdcat.1
 
 
 %check
@@ -40,6 +41,7 @@ cargo test --no-default-features --features terminology
 %license LICENSE
 %doc README.md CHANGELOG.md CONTRIBUTING.md CODE_OF_CONDUCT.md
 %{_bindir}/mdcat
+%{_mandir}/man1/*
 
 %changelog
 * Tue 12 2021 Nicholas Kudriavtsev <nkudriavtsev@gmail.com> - 0.22.2-1
