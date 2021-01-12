@@ -32,7 +32,7 @@ cargo build --release --no-default-features
 %install
 aux_dir=$(find . -path "./target/release/build/mdcat-*/out")
 install -D -p -s -m 755 target/release/mdcat %{buildroot}%{_bindir}/mdcat
-install -D -p -m 644 ${aux_dir}/mdcat.1 %{_mandir}/man1/mdcat.1
+install -D -p -m 644 ${aux_dir}/mdcat.1 %{buildroot}%{_mandir}/man1/mdcat.1
 
 
 %check
