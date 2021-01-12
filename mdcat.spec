@@ -40,7 +40,7 @@ cargo test --no-default-features
 
 %files
 %license LICENSE
-%doc README.md CHANGELOG.md CONTRIBUTING.md CODE_OF_CONDUCT.md
+%doc README.md CHANGELOG.md CODE_OF_CONDUCT.md
 %{_bindir}/mdcat
 %{_mandir}/man1/*
 
