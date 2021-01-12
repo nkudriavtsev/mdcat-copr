@@ -35,7 +35,7 @@ install -D -p -m 644 mdcat.1 %{_mandir}/man1/mdcat.1
 
 
 %check
-cargo test --no-default-features --features terminology
+cargo test --no-default-features
 
 
 %files
