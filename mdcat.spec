@@ -1,5 +1,5 @@
 Name: mdcat
-Version: 0.22.2
+Version: 0.22.3
 Release: 1%{?dist}
 Summary: cat for CommonMark
 License: Mozilla Public License 2.0
@@ -46,6 +46,9 @@ cargo test --no-default-features
 %{_mandir}/man1/*
 
 %changelog
+* Tue Feb 23 2021 Nicholas Kudriavtsev <nkudriavtsev@gmail.com> - 0.22.3-1
+- Release 0.22.3
+
 * Tue Jan 12 2021 Nicholas Kudriavtsev <nkudriavtsev@gmail.com> - 0.22.2-1
 - Release 0.22.2
 - License change
