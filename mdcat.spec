@@ -4,7 +4,7 @@ Release: 1%{?dist}
 Summary: cat for CommonMark
 License: Mozilla Public License 2.0
 URL: https://codeberg.org/flausch/mdcat.git
-Source0: https://codeberg.org/flausch/mdcat/archive/mdcat-%{version}/mdcat-%{version}.tar.gz
+Source0: https://codeberg.org/flausch/mdcat/archive/mdcat-%{version}.tar.gz
 BuildRequires: cargo
 BuildRequires: rubygem-asciidoctor
 %if 0%{?fedora} >= 24
