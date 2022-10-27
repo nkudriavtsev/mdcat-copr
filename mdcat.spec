@@ -1,10 +1,10 @@
 Name: mdcat
-Version: 0.26.1
+Version: 0.29.0
 Release: 1%{?dist}
 Summary: cat for CommonMark
 License: Mozilla Public License 2.0
-URL: https://codeberg.org/flausch/mdcat.git
-Source0: https://codeberg.org/flausch/mdcat/archive/mdcat-%{version}.tar.gz
+URL: https://github.com/lunaryorn/mdcat/
+Source0: https://github.com/lunaryorn/mdcat/archive/refs/tags/mdcat-%{version}.tar.gz
 BuildRequires: cargo
 BuildRequires: rubygem-asciidoctor
 %if 0%{?fedora} >= 24
@@ -46,6 +46,10 @@ cargo test --no-default-features
 %{_mandir}/man1/*
 
 %changelog
+* Thu Oct 27 2022 Nicholas Kudriavtsev <nkudriavtsev@gmail.com> - 0.29.0-1
+- Release 0.29.0
+- Change repositiry hosting to https://github.com/lunaryorn/mdcat/
+
 * Sun Apr 10 2022 Nicholas Kudriavtsev <nkudriavtsev@gmail.com> - 0.26.1-1
 - Release 0.26.1
 - Change repositiry hosting to https://codeberg.org/flausch/mdcat.git
