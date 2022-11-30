@@ -1,5 +1,5 @@
 Name: mdcat
-Version: 0.29.0
+Version: 0.30.1
 Release: 1%{?dist}
 Summary: cat for CommonMark
 License: Mozilla Public License 2.0
@@ -46,6 +46,9 @@ cargo test --no-default-features
 %{_mandir}/man1/*
 
 %changelog
+* Wed Nov 30 2022 Nicholas Kudriavtsev <nkudriavtsev@gmail.com> - 0.30.1-1
+- Release 0.30.1
+
 * Thu Oct 27 2022 Nicholas Kudriavtsev <nkudriavtsev@gmail.com> - 0.29.0-1
 - Release 0.29.0
 - Change repositiry hosting to https://github.com/lunaryorn/mdcat/
