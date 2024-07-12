@@ -34,7 +34,7 @@ aux_dir=$(find . -path "./target/release/build/mdcat-*/out")
 install -D -p -s -m 755 target/release/mdcat %{buildroot}%{_bindir}/mdcat
 install -D -p -s -m 755 target/release/mdcat %{buildroot}%{_bindir}/mdcat
 install -D -p -m 644 ${aux_dir}/mdcat.1 %{buildroot}%{_mandir}/man1/mdcat.1
-install -D -m 755 -d %{_datadir}/mdcat/completions
+mkdir -p %{_datadir}/mdcat/completions
 install -D -p -m 644 ${aux_dir}/completions/{_mdcat,mdcat.bash,mdcat.fish} %{_datadir}/mdcat/completions
 install -D -p -m 644 ${aux_dir}/completions/{_mdless,mdless.bash,mdless.fish} %{_datadir}/mdcat/completions
 
