@@ -27,13 +27,13 @@ images.
 %build
 # Build only relevant terminals for Linux
 cargo build --release --no-default-features
-asciidoctor -b manpage %{_sourcedir}/mdcat.adoc
+asciidoctor -b manpage mdcat.1.adoc
 
 
 %install
 install -D -p -s -m 755 target/release/mdcat %{buildroot}%{_bindir}/mdcat
 install -D -p -s -m 755 target/release/mdcat %{buildroot}%{_bindir}/mdcat
-install -D -p -m 644 %{_sourcedir}/mdcat.1 %{buildroot}%{_mandir}/man1/mdcat.1
+install -D -p -m 644 mdcat.1 %{buildroot}%{_mandir}/man1/mdcat.1
 
 
 %check
