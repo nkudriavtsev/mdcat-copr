@@ -35,9 +35,6 @@ aux_dir=$(find . -path "./target/release/build/mdcat-*/out")
 install -D -p -s -m 755 target/release/mdcat %{buildroot}%{_bindir}/mdcat
 install -D -p -s -m 755 target/release/mdcat %{buildroot}%{_bindir}/mdcat
 install -D -p -m 644 ${aux_dir}/mdcat.1 %{buildroot}%{_mandir}/man1/mdcat.1
-mkdir -p %{buildroot}%{_datadir}/mdcat/completions
-install -D -p -m 644 ${aux_dir}/completions/{_mdcat,mdcat.bash,mdcat.fish} %{buildroot}%{_datadir}/mdcat/completions
-install -D -p -m 644 ${aux_dir}/completions/{_mdless,mdless.bash,mdless.fish} %{buildroot}%{_datadir}/mdcat/completions
 
 
 %check
@@ -49,7 +46,6 @@ cargo test --no-default-features
 %doc README.md CHANGELOG.md
 %{_bindir}/mdcat
 %{_mandir}/man1/*
-%{_datadir}/mdcat/completions/*
 
 %changelog
 %autochangelog
