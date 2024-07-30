@@ -27,6 +27,7 @@ images.
 %build
 # Build only relevant terminals for Linux
 cargo build --release --no-default-features
+asciidoctor -b manpage mdcat.adoc
 
 
 %install
