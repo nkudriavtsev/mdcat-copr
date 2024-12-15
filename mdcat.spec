@@ -7,6 +7,7 @@ URL: https://github.com/lunaryorn/mdcat/
 Source0: https://github.com/lunaryorn/mdcat/archive/refs/tags/mdcat-%{version}.tar.gz
 BuildRequires: cargo
 BuildRequires: rubygem-asciidoctor
+BuildRequires: openssl-devel
 %if 0%{?fedora} >= 24
 ExclusiveArch: x86_64 i686 armv7hl
 %else
