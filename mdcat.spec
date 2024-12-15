@@ -1,5 +1,5 @@
 Name: mdcat
-Version: 2.5.0
+Version: 2.7.1
 Release: 1%{?dist}
 Summary: cat for CommonMark
 License: Mozilla Public License 2.0
